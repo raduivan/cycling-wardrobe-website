@@ -34,12 +34,23 @@ header p {
   font-size: 18px;
 }
 
+.hero-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.hero-title h1 {
+  margin-bottom: 0;
+}
+
 .hero-logo {
-  width: 96px;
-  height: 96px;
-  border-radius: 24px;
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
   display: block;
-  margin: 0 auto 18px;
   box-shadow: 0 8px 18px rgba(4, 10, 24, 0.45);
 }
 
