@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  background: #050d1f;
+  color: #e6eefc;
+  line-height: 1.6;
+}
+
+a {
+  color: #5dd5ff;
+  text-decoration: none;
+}
+
+header {
+  background: linear-gradient(120deg, #071530, #0c1f42);
+  padding: 60px 24px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 12px;
+  font-size: 38px;
+  letter-spacing: 0.5px;
+}
+
+header p {
+  max-width: 640px;
+  margin: 0 auto;
+  color: #b4c5e8;
+  font-size: 18px;
+}
+
+.cta-buttons {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.cta-buttons a {
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.cta-primary {
+  background: #49c5ff;
+  color: #041127;
+}
+
+.cta-secondary {
+  border: 1px solid #30476b;
+  color: #dfe9ff;
+}
+
+main {
+  padding: 48px 24px 80px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-top: 48px;
+  margin-bottom: 20px;
+  color: #f6fbff;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: #101f39;
+  border-radius: 18px;
+  border: 1px solid #1c2d4f;
+  padding: 20px;
+  min-height: 180px;
+  box-shadow: 0 8px 18px rgba(5, 12, 28, 0.4);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #9fd6ff;
+}
+
+.detail-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.detail-list li {
+  margin-bottom: 10px;
+  padding-left: 18px;
+  position: relative;
+}
+
+.detail-list li::before {
+  content: '•';
+  color: #5dd5ff;
+  position: absolute;
+  left: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 32px 16px;
+  color: #7f93b6;
+  border-top: 1px solid #0c1830;
+  font-size: 14px;
+}
+
+.legal-page {
+  padding: 40px 24px 80px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.legal-page h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.legal-page h2 {
+  margin-top: 32px;
+}
+
+.legal-page p {
+  color: #c6d4ef;
+}
