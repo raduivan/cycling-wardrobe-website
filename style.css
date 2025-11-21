@@ -17,7 +17,7 @@ a {
 
 header {
   background: linear-gradient(120deg, #071530, #0c1f42);
-  padding: 60px 24px;
+  padding: 48px 24px 36px;
   text-align: center;
 }
 
@@ -35,16 +35,21 @@ header p {
 }
 
 .hero-title {
-  display: inline-flex;
+  display: inline-grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
   justify-content: center;
-  gap: 16px;
-  margin-bottom: 26px;
+  gap: 6px;
+  margin: 0 auto 16px;
+  max-width: 520px;
+  width: 100%;
 }
 
 .hero-title h1 {
   margin: 0;
   line-height: 1.2;
+  text-align: left;
+  white-space: normal;
 }
 
 .hero-logo {
@@ -81,9 +86,24 @@ header p {
 }
 
 main {
-  padding: 48px 24px 80px;
+  padding: 36px 24px 72px;
   max-width: 980px;
   margin: 0 auto;
+}
+
+@media (max-width: 520px) {
+  header {
+    padding: 40px 18px 28px;
+  }
+
+  .hero-title {
+    gap: 8px;
+    max-width: 100%;
+  }
+
+  main {
+    padding: 28px 18px 64px;
+  }
 }
 
 h2 {
