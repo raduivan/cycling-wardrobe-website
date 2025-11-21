@@ -17,7 +17,7 @@ a {
 
 header {
   background: linear-gradient(120deg, #071530, #0c1f42);
-  padding: 48px 24px 36px;
+  padding: 44px 24px 28px;
   text-align: center;
 }
 
@@ -39,9 +39,9 @@ header p {
   align-items: center;
   justify-content: center;
   gap: 4px;
-  margin: 0 auto 14px;
+  margin: 0 auto 12px;
   max-width: 360px;
-  width: 100%;
+  text-align: center;
 }
 
 .hero-title h1 {
@@ -85,28 +85,28 @@ header p {
 }
 
 main {
-  padding: 36px 24px 72px;
+  padding: 28px 24px 64px;
   max-width: 980px;
   margin: 0 auto;
 }
 
 @media (max-width: 520px) {
   header {
-    padding: 40px 18px 28px;
+    padding: 34px 18px 22px;
   }
 
   .hero-title {
-    gap: 8px;
+    gap: 6px;
     max-width: 100%;
   }
 
   main {
-    padding: 28px 18px 64px;
+    padding: 22px 18px 56px;
   }
 }
 
 h2 {
-  margin-top: 48px;
+  margin-top: 34px;
   margin-bottom: 20px;
   color: #f6fbff;
 }
