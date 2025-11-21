@@ -35,20 +35,19 @@ header p {
 }
 
 .hero-title {
-  display: inline-grid;
-  grid-template-columns: auto 1fr;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  margin: 0 auto 16px;
-  max-width: 520px;
+  gap: 4px;
+  margin: 0 auto 14px;
+  max-width: 360px;
   width: 100%;
 }
 
 .hero-title h1 {
   margin: 0;
   line-height: 1.2;
-  text-align: left;
+  text-align: center;
   white-space: normal;
 }
 
