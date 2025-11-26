@@ -158,6 +158,35 @@ footer {
   font-size: 14px;
 }
 
+.final-cta {
+  text-align: center;
+  padding: 48px 24px 56px;
+  background: #060f24;
+  border-top: 1px solid #0d1d38;
+}
+
+.final-cta h2 {
+  margin: 0 0 12px;
+  color: #f6fbff;
+}
+
+.final-cta p {
+  margin: 0 auto 22px;
+  max-width: 520px;
+  color: #b6c7e4;
+}
+
+.final-cta .cta-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 28px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 10px 18px rgba(6, 17, 40, 0.4);
+}
+
 .legal-page {
   padding: 40px 24px 80px;
   max-width: 800px;
