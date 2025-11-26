@@ -17,8 +17,14 @@ a {
 
 header {
   background: linear-gradient(120deg, #071530, #0c1f42);
-  padding: 44px 24px 28px;
+  padding: 44px 0 28px;
   text-align: center;
+}
+
+.hero-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 header h1 {
@@ -91,8 +97,15 @@ main {
 }
 
 
+.why-it-matters,
+.key-benefits,
 .app-demo {
+  max-width: 980px;
+  margin: 0 auto;
   padding: 0 24px;
+}
+
+.app-demo {
   text-align: center;
 }
 
@@ -109,12 +122,20 @@ main {
 
 @media (max-width: 520px) {
   header {
-    padding: 34px 18px 22px;
+    padding: 34px 0 22px;
   }
 
   .hero-title {
     gap: 6px;
     max-width: 100%;
+  }
+
+  .hero-inner,
+  .why-it-matters,
+  .key-benefits,
+  .app-demo {
+    padding-left: 18px;
+    padding-right: 18px;
   }
 
   main {
