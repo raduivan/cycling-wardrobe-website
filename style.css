@@ -97,12 +97,37 @@ main {
 }
 
 
+
 .why-it-matters,
 .key-benefits,
 .app-demo {
   max-width: 980px;
   margin: 0 auto;
   padding: 0 24px;
+}
+
+.why-it-matters,
+.key-benefits {
+  background: #0a1831;
+  border: 1px solid #132447;
+  border-radius: 20px;
+  padding: 24px;
+  margin-top: 32px;
+  box-shadow: 0 18px 30px rgba(4, 11, 28, 0.45);
+}
+
+.why-it-matters h2,
+.key-benefits h2 {
+  margin-top: 0;
+}
+
+.key-benefits ul {
+  padding-left: 18px;
+  color: #c6d4ef;
+}
+
+.key-benefits li {
+  margin-bottom: 10px;
 }
 
 .app-demo {
@@ -136,6 +161,11 @@ main {
   .app-demo {
     padding-left: 18px;
     padding-right: 18px;
+  }
+
+  .why-it-matters,
+  .key-benefits {
+    padding: 20px;
   }
 
   main {
