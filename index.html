@@ -72,7 +72,13 @@
 
   <section class="app-demo">
     <h2>See it in action</h2>
-    <img src="./app-demo.webp" alt="Cycling Wardrobe app demo showing kit planning flow" class="demo-gif" />
+    <img
+      src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+      data-src="./app-demo.webp"
+      alt="Cycling Wardrobe app demo showing kit planning flow"
+      class="demo-gif lazy-demo"
+      loading="lazy"
+    />
   </section>
 
   <main>
@@ -138,6 +144,33 @@
     const yearEl = document.getElementById('year');
     if (yearEl) {
       yearEl.textContent = new Date().getFullYear();
+    }
+
+    const lazyDemo = document.querySelector('.lazy-demo');
+    if (lazyDemo) {
+      const loadDemo = () => {
+        if (lazyDemo.dataset.src) {
+          lazyDemo.src = lazyDemo.dataset.src;
+          lazyDemo.removeAttribute('data-src');
+        }
+      };
+
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(
+          entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+                loadDemo();
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: [0.5] }
+        );
+        observer.observe(lazyDemo);
+      } else {
+        loadDemo();
+      }
     }
   </script>
 </body>
