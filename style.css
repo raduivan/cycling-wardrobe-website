@@ -138,6 +138,27 @@ main {
   margin-bottom: 16px;
 }
 
+.demo-stack {
+  position: relative;
+  display: inline-block;
+}
+
+.demo-poster,
+.lazy-demo {
+  display: block;
+}
+
+.lazy-demo {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 250ms ease-out;
+}
+
+.lazy-demo.playing {
+  opacity: 1;
+}
+
 .demo-gif {
   width: 100%;
   max-width: 560px;

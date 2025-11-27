@@ -72,13 +72,16 @@
 
   <section class="app-demo">
     <h2>See it in action</h2>
-    <img
-      src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-      data-src="./app-demo.webp"
-      alt="Cycling Wardrobe app demo showing kit planning flow"
-      class="demo-gif lazy-demo"
-      loading="lazy"
-    />
+    <div class="demo-stack">
+      <img src="./app-demo-static.png" alt="Cycling Wardrobe app demo preview" class="demo-gif demo-poster" />
+      <img
+        src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+        data-src="./app-demo.webp"
+        alt="Cycling Wardrobe app demo showing kit planning flow"
+        class="demo-gif lazy-demo"
+        loading="lazy"
+      />
+    </div>
   </section>
 
   <main>
@@ -148,9 +151,16 @@
 
     const lazyDemo = document.querySelector('.lazy-demo');
     if (lazyDemo) {
+      const preloadSrc = lazyDemo.dataset.src;
+      if (preloadSrc) {
+        const preload = new Image();
+        preload.src = preloadSrc;
+      }
+
       const loadDemo = () => {
         if (lazyDemo.dataset.src) {
           lazyDemo.src = lazyDemo.dataset.src;
+          lazyDemo.classList.add('playing');
           lazyDemo.removeAttribute('data-src');
         }
       };
@@ -159,13 +169,13 @@
         const observer = new IntersectionObserver(
           entries => {
             entries.forEach(entry => {
-              if (entry.isIntersecting && entry.intersectionRatio >= 0.9) {
+              if (entry.isIntersecting && entry.intersectionRatio >= 0.99) {
                 loadDemo();
                 observer.unobserve(entry.target);
               }
             });
           },
-          { threshold: [0.9] }
+          { threshold: [0.99] }
         );
         observer.observe(lazyDemo);
       } else {
