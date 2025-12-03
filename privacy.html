@@ -11,60 +11,60 @@
 <body>
   <div class="legal-page">
     <h1>Privacy Policy</h1>
-    <p>Last updated: <strong>November 2025</strong></p>
+    <p>Last updated: <strong>January 2025</strong></p>
 
-    <p>This policy explains how Cycling Wardrobe (“we”, “us”, “the app”) collects, stores, and protects your
-      information. Because kit recommendations rely on your inputs, we are deliberate about collecting only what is
-      necessary and giving you full control over it.</p>
+    <h2>1. Information we collect</h2>
+    <h3>1.1 Wardrobe data</h3>
+    <p>Stored locally or synced when you sign in: item names, type, season tags, and condition flags (windproof, waterproof, thermal, etc.). No photos or media are uploaded.</p>
 
-    <h2>Information we collect</h2>
+    <h3>1.2 Planner inputs & route data</h3>
+    <p>When you use Weather Assist or the Manual Planner, we process: location input (city or coordinates), latitude/longitude from GPX files or route start points, ride inputs (temperature, wind, rain, humidity, duration, intensity, speed), GPX-derived stats (distance, elevation, estimated time), weather results and recommendations.</p>
+    <p>If you sign in, we may store recent ride sessions (weather_sessions), uploaded routes and GPX metadata (routes), and generated kit recommendations (recommendations) so you can reuse routes/devices and maintain continuity across sessions.</p>
+
+    <h3>1.3 Account data (optional)</h3>
+    <p>If you create an account, we store your email address to sync wardrobe items, preferences, routes, and ride sessions across devices.</p>
+
+    <h3>1.4 Diagnostics & telemetry</h3>
+    <p>To improve stability and understand feature use, we collect planner interaction events (planner_events) and error logs (app_logs). These may include timestamps, lat/lon used in a request, route point counts, and request context. They may be linked to your account when you are signed in. We do not collect advertising IDs, third-party analytics SDKs, or behavioral profiles.</p>
+
+    <h2>2. How we use the data</h2>
     <ul class="detail-list">
-      <li><strong>Wardrobe entries.</strong> Items, seasons, temperatures, notes, and any media you add.</li>
-      <li><strong>Ride preferences.</strong> Typical speed, rain tolerance, intensity, saved routes, and GPX metadata
-        (distance, duration, elevation) when you import a file.</li>
-      <li><strong>Account data.</strong> If you create an account we store your email address to keep your wardrobe in
-        sync across devices.</li>
-      <li><strong>Diagnostics.</strong> Anonymous crash logs and basic usage metrics that help us debug issues—no ads or
-        tracking profiles.</li>
+      <li>Generate kit recommendations based on your wardrobe and ride inputs.</li>
+      <li>Compute weather forecasts using your chosen location or GPX route.</li>
+      <li>Sync wardrobe, preferences, routes, and session history when signed in.</li>
+      <li>Improve reliability via planner events and error logs.</li>
+      <li>Respond to support requests you send.</li>
+    </ul>
+    <p>We do not show ads, sell data, or share information for marketing.</p>
+
+    <h2>3. Where your data goes (processing)</h2>
+    <h3>3.1 Supabase (EU region)</h3>
+    <p>Used for account data, synced wardrobe items, routes, GPX metadata, weather sessions, and telemetry. All communication uses HTTPS; data is encrypted at rest.</p>
+    <h3>3.2 Weather API provider</h3>
+    <p>To fetch forecasts, we send latitude/longitude and ride parameters to our weather provider (e.g., Open-Meteo) solely to return weather data.</p>
+    <h3>3.3 Email support</h3>
+    <p>If you contact support, your email may include GPX files, screenshots, or technical logs you choose to provide. We do not share data with advertisers or data brokers.</p>
+
+    <h2>4. Storage & retention</h2>
+    <h3>4.1 On your device</h3>
+    <p>Wardrobe items, preferences, and planner inputs are stored locally. You can delete them via <em>Settings → Maintenance</em>.</p>
+    <h3>4.2 In the cloud (if signed in)</h3>
+    <p>Synced wardrobe items, routes, sessions, and recommendations remain until you delete them in-app or contact support. Telemetry/logs are retained for operations and periodically purged.</p>
+
+    <h2>5. Your choices & rights</h2>
+    <ul class="detail-list">
+      <li>Use the app without an account to keep data on your device.</li>
+      <li>Clear local or cloud data via <em>Settings → Maintenance</em> or by emailing support.</li>
+      <li>Request access, correction, deletion, or export of cloud data.</li>
+      <li>GDPR/EEA/UK: you may access, correct, delete, restrict processing, and port your data; we respond within 30 days.</li>
+      <li>Withdraw consent by signing out or uninstalling the app.</li>
     </ul>
 
-    <h2>How we use the data</h2>
-    <p>We use your information to:</p>
-    <ul class="detail-list">
-      <li>Generate weather-aware kit recommendations tailored to your wardrobe.</li>
-      <li>Sync wardrobe items, preferences, and ride history between devices when you sign in.</li>
-      <li>Respond to support requests you voluntarily send us.</li>
-      <li>Improve stability through crash diagnostics.</li>
-    </ul>
-    <p>We do not sell your information, show ads, or build advertising profiles.</p>
+    <h2>6. Children</h2>
+    <p>Cycling Wardrobe is not intended for children under 13. We do not knowingly collect information from children. If you believe a child has used the app, contact us and we will remove the data.</p>
 
-    <h2>Storage & security</h2>
-    <p>Everything stays on your device unless you choose to sign in. If you sign in, encrypted copies are stored on our
-      Supabase account hosted in the EU. All communication uses HTTPS. You can remove cloud data at any time from
-      <em>Settings → Maintenance</em>.</p>
-
-    <h2>Retention & deletion</h2>
-    <ul class="detail-list">
-      <li>Local data remains on device until you uninstall the app or use the “Clear data” options.</li>
-      <li>Cloud data is retained while your account remains active. Delete it via the in-app Maintenance section or by
-        emailing us; removal is permanent and immediate.</li>
-    </ul>
-
-    <h2>Children</h2>
-    <p>Cycling Wardrobe is not intended for children under 13. We do not knowingly collect data from children. If you
-      believe a child has provided information, contact us and we will delete it.</p>
-
-    <h2>Your rights</h2>
-    <p>Wherever you live, you can:</p>
-    <ul class="detail-list">
-      <li>Export your wardrobe as JSON from the app.</li>
-      <li>Request correction or deletion of cloud data.</li>
-      <li>Withdraw consent by removing the app or signing out.</li>
-    </ul>
-
-    <h2>Contact</h2>
-    <p>Email <a href="mailto:support@cyclingwardrobe.com">support@cyclingwardrobe.com</a> with privacy questions or
-      deletion requests. Please include screenshots or GPX files if they help explain an issue.</p>
+    <h2>7. Contact</h2>
+    <p>Email <a href="mailto:support@cyclingwardrobe.com">support@cyclingwardrobe.com</a> with privacy questions or data requests. If reporting an issue, you may include screenshots or GPX files to help us reproduce it.</p>
 
     <p><a href="./index.html">← Back to home</a></p>
   </div>
